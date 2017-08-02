@@ -27,7 +27,6 @@ describe("Authentication", function() {
         var authResult = {};
         before(function(done) {
             //log them in...
-
             auth.authenticate({ email: "test@test.com", password: "password" }, function(err, result) {
                 assert.ok(err === null, err);
                 authResult = result;
